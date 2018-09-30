@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>data-bind</title>
+</head>
+<body>
+	<!-- example1 -->
+	<h2>example1</h2>
+
+	<p bind-app="context"></p>
+
+	<input type="text" model-app="context" />
+
+	<p>作者：<span bind-app="autor"></span></p>
+
+	<!-- example2  -->
+	<h2>example2</h2>
+	
+	<p>姓名：<span bind-main="name"></span></p>
+	<p>姓名：<span bind-main="name"></span></p> <!--绑定多处-->
+	<p><input type="text" model-main="name" /></p>
+	<p>年龄：<span bind-main="age"></span></p>
+	<p><input type="text" model-main="age"></p>
+	
+</body>
+</html>
